@@ -44,9 +44,9 @@ def main():
         if resp.status_code != 200:
             print("    ????ERROR at %s. Code is %s" % (name, resp.status_code))
         elif name in resp_text or fix_enc_name in resp_text:
-            print("    !!!!FOUND %s IN BLACKLIST (maybe) %s" % (name, url))
+            print("    !!!!FOUND %s IN BLACKLIST (maybe) %s" % (name, key))
         else:
-            print("        not found %s at %s" % (name, url))
+            print("        not found %s at %s" % (name, key))
         if len(resp.text) < 15000:
             print("            but site is pretty small. Maybe was unable to see black list ")
 
