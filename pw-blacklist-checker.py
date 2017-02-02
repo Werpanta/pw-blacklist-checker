@@ -34,7 +34,8 @@ blacklist = {
 
 def main():
 
-    for key, blacklist_item in blacklist.items():
+    for key in blacklist.keys():
+        blacklist_item = blacklist[key]
         curl_py_code = uncurl.parse(blacklist_item)
         resp = eval(curl_py_code)
 
