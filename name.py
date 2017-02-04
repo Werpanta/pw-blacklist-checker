@@ -1,1 +1,1 @@
-name = "Imary"
+name = "|Temnb|й"
